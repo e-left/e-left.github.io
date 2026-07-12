@@ -1,4 +1,5 @@
 ---
+published: false # template demo, kept for reference
 title: "Paper Title Number 2"
 collection: publications
 category: manuscripts
