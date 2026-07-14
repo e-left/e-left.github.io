@@ -3,10 +3,10 @@
    ========================================================================== */
 
 /* Color codes used for the theme */
-$gray                       : #7a8288;
+$gray                       : #71717a;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : #9ba1a6;
+$light-gray                 : #a1a1aa;
 $lighter-gray               : mix(#fff, $gray, 90%);
 
 /* Color codes used for the site */
@@ -17,8 +17,8 @@ $success-color              : #62c462;
 $warning-color              : #f89406;
 
 /* Other basic settings for the template */
-$border-radius              : 4px;
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$border-radius              : 0;
+$box-shadow                 : none;
 $global-transition          : all 0.2s ease-in-out;
 $masthead-height            : 70px;
 $navicon-width              : 28px;
@@ -36,9 +36,10 @@ $sidebar-screen-min-width   : 1024px;
     --global-code-background-color      : #fafafa;
     --global-code-text-color            : #{$darker-gray};
     --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
-    --global-link-color                 : #52adc8;
-    --global-link-color-hover           : mix(#000, #2f7f93, 25%);
-    --global-link-color-visited         : mix(#fff, #2f7f93, 25%);  
+    --global-link-color                 : #1a7f37;
+    --global-link-color-hover           : #116329;
+    --global-link-color-visited         : #1a7f37;
+    --global-accent-color               : #2ea043;
     --global-masthead-link-color        : #{$dark-gray};
     --global-masthead-link-color-hover  : mix(#000, #{$gray}, 25%);    
     --global-text-color                 : #{$dark-gray};

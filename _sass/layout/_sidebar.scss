@@ -95,11 +95,11 @@
 
   img {
     max-width: 175px;
-    border-radius: 50%;
+    border-radius: 0;
 
     @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid var(--global-border-color);
+      padding: 4px;
+      border: 1px solid var(--global-dark-border-color);
     }
   }
 }
@@ -260,5 +260,63 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+/*
+   Terminal-style link list — vertical, icon + label, monochrome icons.
+   ========================================================================== */
+
+.author__urls--compact.author__urls {
+  /* Always visible (the toggle button was removed) */
+  display: block;
+  position: static;
+  margin-top: 12px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+
+  &:before,
+  &:after {
+    display: none; /* drop the dropdown pointer triangles */
+  }
+
+  li {
+    white-space: nowrap;
+    font-family: $monospace;
+    font-size: 0.9rem;
+    letter-spacing: -0.01em;
+    line-height: 1.7;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 4px 0;
+    color: var(--global-text-color);
+    font-family: $monospace;
+    font-size: 0.9rem;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--global-accent-color);
+      text-decoration: none;
+    }
+  }
+
+  /* Monochrome icons: override the .social-icons brand colours so every icon
+     (GitHub, LinkedIn, ORCID…) matches the text and stays visible in dark mode.
+     The double-class parent selector out-specifies `.social-icons .fa-github`.
+     A fixed width lines every glyph up into one column. */
+  i {
+    flex-shrink: 0;
+    width: 1.35em;
+    color: inherit;
+    font-size: 1.05em;
+    text-align: center;
   }
 }
