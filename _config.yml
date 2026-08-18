@@ -12,7 +12,7 @@ title: "Fotios Alexandridis"
 # title_separator          : "-"
 name: &name "Fotios Alexandridis"
 description: &description "Fotios Alexandridis — Computer Science Ph.D. student in the ZEST group at the University of Zurich, researching empirical software engineering."
-url: https://e-left.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+url: https://falexandridis.dev # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "e-left/e-left.github.io"
 
