@@ -380,22 +380,29 @@
    Table of contents navigation
    ========================================================================== */
 
+/* _reset.scss sets `nav { display: block }`, and an author rule beats the UA
+   stylesheet's [hidden], so toc.js's hidden attribute needs honouring here */
+.toc[hidden] {
+  display: none;
+}
+
 .toc {
   font-family: $sans-serif-narrow;
   color: var(--global-text-color-light);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background-color: #fff;
-  border: 1px solid var(--global-border-color);
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  background: none;
+  border: 0;
+  box-shadow: none;
 
+  /* uppercasing belongs to the label only — on .toc it would also mangle the
+     heading text the entries are built from */
   .nav__title {
-    color: #fff;
-    font-size: $type-size-6;
-    background: var(--global-base-color);
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
+    margin: 0 0 0.25rem;
+    padding: 0 0 0 1rem;
+    color: var(--global-text-color-light);
+    font-size: $type-size-7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: none;
   }
 }
 
@@ -406,31 +413,41 @@
   list-style: none;
   font-size: 0.8rem;
 
+  /* the reset above only covers the top-level ul; nested ones need it too or
+     inherited padding knocks their links off the rail */
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* The rail is the links' own left borders: they stack flush with no gaps, so
+     the segments join into one continuous rule, nesting included. */
   a {
     display: block;
-    padding: 0.5rem 1rem;
-    color: var(--global-code-text-color);
+    padding: 0.35rem 0 0.35rem 1rem;
+    color: var(--global-text-color-light);
     font-size: $type-size-7;
-    font-weight: bold;
-    line-height: 1.5;
-    border-bottom: 1px solid var(--global-border-color);
+    font-weight: normal;
+    line-height: 1.4;
+    border-left: 2px solid var(--global-border-color);
     text-decoration-line: none !important;
 
     &:hover {
-      color: #000;
-      background: var(--global-link-color-hover);
+      color: var(--global-link-color);
+      border-left-color: var(--global-text-color-light);
     }
-  }
 
-  > li:last-child {
-    a {
-      border-bottom: none;
+    /* section currently in view, set by assets/js/toc.js */
+    &.active {
+      color: var(--global-link-color);
+      font-weight: bold;
+      border-left-color: var(--global-link-color);
     }
   }
 
   li ul > li a {
     padding-left: 2rem;
-    font-weight: normal;
   }
 
   /* hide sub sub links on small screens*/

@@ -45,6 +45,7 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% if page.toc %}{% include post-toc.html %}{% endif %}
         {{ content }}
 
         {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}

@@ -1,0 +1,7 @@
+<aside class="sidebar__right{% if page.toc_sticky != false %} sticky{% endif %}">
+  <nav class="toc js-toc" hidden>
+    <header><h4 class="nav__title"><i class="fa fa-{{ page.toc_icon | default: 'file-text' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
+    <ul class="toc__menu"></ul>
+  </nav>
+</aside>
+<script defer src="{{ base_path }}/assets/js/toc.js"></script>

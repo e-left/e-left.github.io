@@ -66,13 +66,20 @@
   @include breakpoint($large) {
     position: relative;
     float: right;
-    width: $right-sidebar-width-narrow;
+    width: 140px;
     margin-left: span(0.5 of 12);
+    /* Park it in the empty band .page reserves with suffix(2 of 12), which Susy
+       emits as padding-right. A % margin here resolves against .page__content,
+       so the ratio 16.9492% / 61.8644% is the value that cancels it — and being
+       two shares of the same container, it holds at every breakpoint. */
+    margin-right: -27.397%;
     z-index: 10;
   }
 
   @include breakpoint($x-large) {
-    width: $right-sidebar-width;
+    /* the band stops growing once #main hits its 1280px cap, so this is the
+       widest the margin can hold, not a number worth raising */
+    width: 190px;
   }
 }
 

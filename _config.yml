@@ -174,7 +174,6 @@ exclude:
   - CONTRIBUTING.md
   - Dockerfile
   - docker-compose.yaml
-  - files # demo publication/talk PDFs, kept in repo for reference but not published
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
@@ -244,8 +243,9 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-      share: true
+      share: false
       related: true
+      toc: true
   # _pages
   - scope:
       path: ""
@@ -260,7 +260,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comments: true
   # _publications
   - scope:
@@ -269,7 +269,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comments: true
   # _portfolio
   - scope:
@@ -278,7 +278,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comment: true
   # _talks
   - scope:
@@ -287,7 +287,7 @@ defaults:
     values:
       layout: talk
       author_profile: true
-      share: true
+      share: false
 
 # Sass/SCSS
 sass:
@@ -295,7 +295,7 @@ sass:
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /blog/:year/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
 timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
