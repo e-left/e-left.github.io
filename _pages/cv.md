@@ -16,6 +16,7 @@ Education
 
 * Ph.D in Computer Science, University of Zurich, Sept. 2025- Sept. 2029 (expected)
 * M.Eng. in Electrical and Computer Engineering, Aristotle University of Thessaloniki, Oct. 2019 - April 2025
+* Scored 19003 out of 20000 in the Greek Panhellenic Exams, June 2019
 
 Work experience
 ======
