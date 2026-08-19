@@ -1,1 +1,1 @@
-bundle exec jekyll serve -l -H localhost --drafts
+bundle exec jekyll serve -l -H localhost --drafts --unpublished

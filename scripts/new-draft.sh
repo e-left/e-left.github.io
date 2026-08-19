@@ -52,7 +52,7 @@ tags:
 toc: true # post map in the right sidebar; needs 2+ headings to show
 ---
 
-<!-- The first paragraph becomes the excerpt on /year-archive/, /categories/
+<!-- The first paragraph becomes the excerpt on /blog/, /categories/
      and /tags/ (excerpt_separator is a blank line). Make it stand alone. -->
 
 ## Notes
