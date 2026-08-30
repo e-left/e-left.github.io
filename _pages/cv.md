@@ -49,17 +49,17 @@ Work experience
 Projects
 ======
 
-* Autonomous Racecar State Estimation | *C++, ROS2, Python, Matlab, Control Systems*
+* Autonomous Racecar State Estimation (*C++, ROS2, Python, Matlab, Control Systems*)
   * Implemented real time robust ROS2 node for racecar state estimation, based on the Extended Kalman Filter.
   * Created custom visualization and evaluation scripts to evaluate progress in past data and simulations.
   * • Contributed in vehicle top speed in unknown track navigation to go from **15km/h** to **25km/h**.
 
-* Master thesis on Autonomous Driving with Computer Vision | *Python, Image Processing, Machine Learning, CARLA Simulator*
+* Master thesis on Autonomous Driving with Computer Vision (*Python, Image Processing, Machine Learning, CARLA Simulator*)
   * Titled ”Design and development of a low cost end to end autonomous navigation system for consumer vehicles”.
   * Proposed a novel, low cost methodology to quickly iterate on end to end models for autonomous driving.
   * End to end experimental simulator setup, from dataset gathering to model training to real time evaluation.
 
-* Distributed Low Latency Crypto Oracle | *Python , AWS, Linux, Redis, Docker, Git*
+* Distributed Low Latency Crypto Oracle (*Python , AWS, Linux, Redis, Docker, Git*)
   * Total processing time < 100ms shared across microservices, communicating via redis, 99% availability.
 
 Skills
